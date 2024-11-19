@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Neucha', cursive;
+  /* letter-spacing: 4px; */
+  font-weight: 600;
+  scroll-behavior: smooth;
+  cursor: pointer;
+}
+body{
+
+  width: 100%;
+  /* height: 100%; */
+
+  background-image: url('../src/images/bg-img.jpg');
+  background-repeat: no-repeat;
+  /* sets backgroung to not repeat */
+  background-attachment: fixed;
+  /* makes it not to scroll */
+  background-position: center;
+  /* makes backgroung position to centre of the image */
+  background-size: cover;
+  position: absolute;
+  z-index: -99;
+  
+}
+
+.container{
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  padding: 1rem;
+}
+
+.container > .year{
+  margin:  2rem 1rem;
+  padding: .4rem;
+  color: white;
+  background-color: rgba(1, 0, 2, 0.652);
+}
+.container > .year > h1 > img{
+  width: 2.2rem;
+  height: 2.2rem;
+  margin: 0 1rem
+}
+
+.top > form > input {
+
+  padding: 0.5rem;
+  font-size: 1.8rem;
+  margin: 1rem;
+  color: rgb(255, 82, 2);
+  background-color: azure;
+  border: none;
+  text-align: center;
+  cursor: text;
+}
+.top > form > button{
+  align-items: center;
+  font-size: 1.2rem;
+  padding: .8rem;
+  color: rgb(255, 255, 255);
+  background-color: orangered;
+  border: none;
+}
+
+/* todolist todo.jsx */
+.todoList{
+
+  width: 80%; 
+  /* important */
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: center;
+
+}
+.singleList{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  width: 116%;
+  margin: .4rem 0;
+  padding-top: 1rem;
+}
+.img{
+  margin: 4px;
+  padding: 0;
+}
+.h3Tag{
+  width:90%; 
+  margin: 1rem;
+}
+
+.h3Tag {
+  word-wrap: break-word;
+}
+
+.img > img{
+  width: 2.2rem;
+  height: 2.2rem;
+  margin: 0;
+}
+
+.emptyList-button > form > button{
+  align-items: center;
+  font-size: 1.2rem;
+  margin:  2rem  0;
+  padding: .5rem;
+  color: rgb(255, 255, 255);
+  background-color: orangered;
+  border: none;
+}
+
+@media screen and (max-width: 660px) {
+  .container{
+    width: inherit;
+    padding: 0rem;
+  }
+  .container > .year{
+    margin:  2rem 0rem;
+    font-size: .7rem;
+    padding: .1rem;
+  }
+  .container > .year > h1 > img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 1rem;
+  }
+  .top > form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top > form > input {
+
+    padding: .5rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+  .top > form > button{
+    width: 6rem;
+    font-size: 1.2rem;
+    padding: .5rem;
+  }
+  .h3Tag{
+    width:50%; 
+    margin: 1rem;
+  }
+  .img > img{
+    width: 2rem;
+    height: 2rem;
+    margin: 0;
+  }
+}
